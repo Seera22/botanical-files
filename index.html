@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botanical Files | Plant Growth Investigation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">🌿 BOTANICAL FILES</a>
+    <span class="status">● INVESTIGATION UNIT ACTIVE</span>
+  </header>
+
+  <main>
+   
+<!-- GAME INTRO SCREEN -->
+<section id="game-intro" class="game-intro">
+  <div class="intro-grid"></div>
+  <div class="intro-glow"></div>
+
+  <div class="intro-content">
+    <div class="intro-classification">
+      <span class="status-dot"></span>
+      BOTANICAL INVESTIGATION UNIT
+    </div>
+
+    <p class="intro-overline">CLASSIFIED RESEARCH DIVISION</p>
+
+    <h1>
+      BOTANICAL
+      <span>FILES<span class="title-period">.</span></span>
+    </h1>
+
+    <p class="intro-description">
+      Every plant holds a secret.
+      Every secret leaves evidence.
+      Your investigation begins here.
+    </p>
+
+    <div class="intro-details">
+      <div>
+        <span>ACTIVE FILES</span>
+        <strong>03</strong>
+      </div>
+      <div>
+        <span>SUBJECT</span>
+        <strong>PLANT GROWTH</strong>
+      </div>
+      <div>
+        <span>ACCESS LEVEL</span>
+        <strong>RESTRICTED</strong>
+      </div>
+    </div>
+
+    <button
+      class="intro-start-btn"
+      onclick="startInvestigation()"
+    >
+      <span>▶</span> START INVESTIGATION
+    </button>
+
+    <p class="intro-footnote">
+      AUTHORIZED INVESTIGATORS ONLY // FILE SYSTEM ONLINE
+    </p>
+  </div>
+
+  <div class="intro-specimen">
+    <div class="specimen-ring ring-one"></div>
+    <div class="specimen-ring ring-two"></div>
+    <div class="specimen-plant">🌿</div>
+    <div class="specimen-caption">
+      <span>SPECIMEN NO. 001</span>
+      <strong>UNKNOWN GROWTH PATTERN</strong>
+      <small>STATUS: UNDER ANALYSIS</small>
+    </div>
+  </div>
+</section>
+
+<section class="hero hero-upgraded">
+  <div class="hero-content">
+    <div class="classified-tag">
+      <span class="live-dot"></span>
+      TOP SECRET · BIOLOGY DIVISION
+    </div>
+
+    <p class="hero-kicker">THE SCIENCE OF THE UNSEEN</p>
+
+    <h1>
+      EVERY PLANT<br>
+      LEAVES <span>EVIDENCE.</span>
+    </h1>
+
+    <p class="intro">
+      Nature is hiding something.
+      Three mysterious cases. Hidden biological clues.
+      One investigator to uncover the truth.
+    </p>
+
+    <a class="primary-btn start-btn" href="#cases">
+      <span>START INVESTIGATION</span>
+      <span class="btn-arrow">↗</span>
+    </a>
+
+    <div class="hero-stats">
+      <div>
+        <strong>03</strong>
+        <span>ACTIVE CASES</span>
+      </div>
+      <div>
+        <strong>01</strong>
+        <span>MISSION</span>
+      </div>
+      <div>
+        <strong>∞</strong>
+        <span>QUESTIONS</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="orbit orbit-one"></div>
+    <div class="orbit orbit-two"></div>
+
+    <div class="specimen">
+      <span class="specimen-label">SPECIMEN / 001</span>
+      <div class="plant-art">🌿</div>
+      <div class="scan-line"></div>
+      <span class="specimen-caption">SUBJECT: PLANT GROWTH</span>
+      <span class="specimen-status">ANALYSIS PENDING...</span>
+    </div>
+
+    <div class="floating-note note-top">
+      <span>◈</span> BIOLOGICAL EVIDENCE
+    </div>
+
+    <div class="floating-note note-bottom">
+      <span>✳</span> CLASSIFICATION: UNKNOWN
+    </div>
+  </div>
+
+  <div class="hero-footer">
+    <span>FIELD NOTES — VOL. 001</span>
+    <span>OBSERVE · INVESTIGATE · DISCOVER</span>
+  </div>
+</section>
+
+
+    <section id="cases" class="cases-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR MISSION STARTS HERE</p>
+          <h2>Active Case Files</h2>
+        </div>
+        <span class="case-count">03 FILES FOUND</span>
+      </div>
+
+      <div class="case-grid">
+        <article class="case-card">
+          <div class="case-top">
+            <span>CASE 001</span><span>● OPEN</span>
+          </div>
+          <<div class="case-image image-shoot">
+  <span class="image-label">SPECIMEN 01 // SHOOT</span>
+  <span class="image-icon">🌱</span>
+</div>
+          <p class="case-type">VERTICAL GROWTH</p>
+          <h3>The Mystery of the Growing Shoot</h3>
+          <p>Discover which meristem helps shoots and roots grow longer.</p>
+          <button onclick="openCase(0)">INVESTIGATE FILE ↗</button>
+        </article>
+
+        <article class="case-card">
+          <div class="case-top">
+            <span>CASE 002</span><span>● OPEN</span>
+          </div>
+          <div class="case-image image-trunk">
+  <span class="image-label">SPECIMEN 02 // STEM</span>
+  <span class="image-icon">🌳</span>
+</div>
+          <p class="case-type">THICKENING STEM</p>
+          <h3>The Expanding Tree Trunk</h3>
+          <p>Find the evidence behind increasing stem and root thickness.</p>
+          <button onclick="openCase(1)">INVESTIGATE FILE ↗</button>
+        </article>
+
+        <article class="case-card">
+          <div class="case-top">
+            <span>CASE 003</span><span>● OPEN</span>
+          </div>
+          <div class="case-image image-grass">
+  <span class="image-label">SPECIMEN 03 // GRASS</span>
+  <span class="image-icon">🌾</span>
+</div>
+          <p class="case-type">REGENERATION</p>
+          <h3>The Grass Reboot</h3>
+          <p>Why can grass grow again after animals eat its leaves?</p>
+          <button onclick="openCase(2)">INVESTIGATE FILE ↗</button>
+        </article>
+      </div>
+    </section>
+
+<!-- BOTANICAL EVIDENCE BOARD -->
+<section id="evidence-board" class="evidence-board-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">RESTRICTED RESEARCH ARCHIVE</p>
+      <h2>Evidence Board</h2>
+      <p class="board-subtitle">
+        Every clue reveals a secret behind plant growth.
+      </p>
+    </div>
+    <span class="case-count">EVIDENCE LOG // 003</span>
+  </div>
+
+  <div class="evidence-board">
+    <div class="board-topline">
+      <span>BOTANICAL INVESTIGATION UNIT</span>
+      <span>CLASSIFIED // 2026</span>
+    </div>
+
+    <div class="evidence-grid">
+      <article class="evidence-card">
+        <div class="evidence-photo evidence-photo-shoot">
+          <span class="evidence-tag">EVIDENCE 01</span>
+        </div>
+        <p class="evidence-category">PRIMARY GROWTH</p>
+        <h3>The Growing Point</h3>
+        <p>
+          <strong>Clue:</strong> New cells at the tips of roots and shoots
+          help the plant grow longer.
+        </p>
+        <div class="evidence-stamp">APICAL MERISTEM</div>
+      </article>
+
+      <article class="evidence-card">
+        <div class="evidence-photo evidence-photo-trunk">
+          <span class="evidence-tag">EVIDENCE 02</span>
+        </div>
+        <p class="evidence-category">SECONDARY GROWTH</p>
+        <h3>The Hidden Layers</h3>
+        <p>
+          <strong>Clue:</strong> Lateral meristems produce tissues that
+          increase the thickness of stems and roots.
+        </p>
+        <div class="evidence-stamp">LATERAL MERISTEM</div>
+      </article>
+
+      <article class="evidence-card">
+        <div class="evidence-photo evidence-photo-grass">
+          <span class="evidence-tag">EVIDENCE 03</span>
+        </div>
+        <p class="evidence-category">REGENERATION</p>
+        <h3>The Grass Reboot</h3>
+        <p>
+          <strong>Clue:</strong> Some grasses regrow because growth regions
+          remain near the base of leaves or internodes.
+        </p>
+        <div class="evidence-stamp">INTERCALARY MERISTEM</div>
+      </article>
+    </div>
+
+    <div class="board-footer">
+      <span>3 SPECIMENS DOCUMENTED</span>
+      <span>ANALYSE THE EVIDENCE. SOLVE THE CASE.</span>
+    </div>
+  </div>
+</section>
+<!-- ACHIEVEMENT DASHBOARD -->
+<section id="achievement-dashboard" class="achievement-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">INVESTIGATOR PERFORMANCE</p>
+      <h2>Mission Dashboard</h2>
+      <p class="board-subtitle">
+        Track your discoveries and complete every botanical investigation.
+      </p>
+    </div>
+    <span class="case-count">LIVE SYSTEM</span>
+  </div>
+
+  <div class="achievement-panel">
+    <div class="achievement-heading">
+      <div>
+        <span class="dashboard-label">CURRENT INVESTIGATION STATUS</span>
+        <h3 id="investigator-rank">ROOKIE INVESTIGATOR</h3>
+      </div>
+      <div class="rank-icon" id="rank-icon">🔎</div>
+    </div>
+
+    <div class="achievement-stats">
+      <div class="stat-card">
+        <span>CASES SOLVED</span>
+        <strong id="dashboard-solved">0 <small>/ 3</small></strong>
+      </div>
+      <div class="stat-card">
+        <span>COMPLETION</span>
+        <strong id="dashboard-percent">0%</strong>
+      </div>
+      <div class="stat-card">
+        <span>FILES REMAINING</span>
+        <strong id="dashboard-remaining">3</strong>
+      </div>
+    </div>
+
+    <div class="dashboard-progress-heading">
+      <span>MISSION PROGRESS</span>
+      <span id="dashboard-progress-label">0 OF 3 COMPLETE</span>
+    </div>
+
+    <div class="dashboard-progress-track">
+      <div id="dashboard-progress-fill" class="dashboard-progress-fill"></div>
+    </div>
+
+    <div class="mission-checklist">
+      <div class="mission-item" id="mission-0">
+        <span class="mission-status">○</span>
+        <div>
+          <strong>CASE 001 — THE GROWING SHOOT</strong>
+          <small>Investigate primary growth</small>
+        </div>
+        <span class="mission-tag">PENDING</span>
+      </div>
+
+      <div class="mission-item" id="mission-1">
+        <span class="mission-status">○</span>
+        <div>
+          <strong>CASE 002 — THE EXPANDING TREE TRUNK</strong>
+          <small>Investigate secondary growth</small>
+        </div>
+        <span class="mission-tag">PENDING</span>
+      </div>
+
+      <div class="mission-item" id="mission-2">
+        <span class="mission-status">○</span>
+        <div>
+          <strong>CASE 003 — THE GRASS REBOOT</strong>
+          <small>Investigate grass regeneration</small>
+        </div>
+        <span class="mission-tag">PENDING</span>
+      </div>
+    </div>
+
+    <p class="dashboard-footnote">
+      SYSTEM NOTE: Your progress updates when you solve a case correctly.
+    </p>
+  </div>
+</section>
+    <section id="investigation" class="investigation" hidden>
+      <p class="eyebrow">CONFIDENTIAL CASE REPORT</p>
+      <div class="report" id="report"></div>
+      <button class="primary-btn" onclick="startQuiz()">EXAMINE THE EVIDENCE →</button>
+      <div id="quiz" class="quiz" hidden></div>
+      <button class="back-btn" onclick="backToCases()">← BACK TO CASE FILES</button>
+    </section>
+
+    <section class="mission">
+      <p class="eyebrow">THE INVESTIGATOR'S OBJECTIVE</p>
+      <h2>Observe. Investigate. Explain.</h2>
+      <p>Use biological evidence to explain how meristems contribute to plant growth.</p>
+    </section>
+  </main>
+
+  <footer>
+    BOTANICAL FILES © 2026 · PLANT GROWTH INVESTIGATION UNIT
+  </footer>
+</body>
+</html>
